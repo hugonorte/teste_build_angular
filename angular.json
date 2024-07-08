@@ -93,7 +93,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-           "buildTarget": "teste-build-github:build:production"
+           "buildTarget": "teste_build_angular:build:production"
           }
         }
       }
