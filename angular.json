@@ -59,7 +59,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "teste_build_github:build:production"
+              "buildTarget": "teste_build_angular:build:production"
             },
             "development": {
               "buildTarget": "teste_build_github:build:development"
@@ -93,7 +93,11 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-           "buildTarget": "teste_build_angular:build:production"
+           "buildTarget": "teste_build_angular:build:production",
+           "baseHref": "/teste_build_angular/",
+           "repo":"https://github.com/hugonorte/teste_build_angular.git",
+           "name":"hugonorte",
+           "email":"hugonorte@gmail.com"
           }
         }
       }
